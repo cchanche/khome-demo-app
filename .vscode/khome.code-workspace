@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "path": "../",
+      "name": "📦 Root"
+    },
+    {
+      "path": "../packages/api",
+      "name": "⚙️ Api"
+    }
+  ],
+  "settings": {
+    "conventionalCommits.emojiFormat": "emoji",
+    "conventionalCommits.gitmoji": true,
+    "conventionalCommits.promptBody": false,
+    "conventionalCommits.promptFooter": false,
+    "conventionalCommits.promptScopes": true,
+    "conventionalCommits.showEditor": false,
+    "git.branchProtection": ["main"],
+    "git.branchProtectionPrompt": "alwaysPrompt",
+    "conventionalCommits.scopes": ["root | initial setup"]
+  }
+}
