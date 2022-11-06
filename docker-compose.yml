@@ -1,0 +1,30 @@
+version: "3.4"
+
+# Lanch local dev environement
+# Make sure to add .env file in the same directory,
+# containing :
+# MONGO_DATABASE
+# MONGO_USERNAME
+# MONGO_PASSWORD
+# MONGO_PORT
+
+services:
+  database:
+    # In production, you may want to use a managed database service
+    container_name: database
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_DATABASE: $MONGO_DATABASE
+      MONGO_INITDB_ROOT_USERNAME: $MONGO_USERNAME
+      MONGO_INITDB_ROOT_PASSWORD: $MONGO_PASSWORD
+    volumes:
+      # Bind the docker volume 'mongo-volume' to the container
+      - mongo-volume:/data/db:rw
+    ports:
+      # Binds user-defined port to default mongo's 27017
+      - "$MONGO_PORT:27017"
+
+volumes:
+  # Creates a khome_mongo-volume docker volume.
+  # Clear the volume with `docker volume prune`
+  mongo-volume:
