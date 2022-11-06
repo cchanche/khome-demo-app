@@ -29,7 +29,8 @@
       "api | config",
       "api | documentation",
       "root | documentation",
-      "root | release"
+      "root | release",
+      "frontend | config"
     ]
   }
 }
