@@ -32,7 +32,8 @@
       "root | documentation",
       "root | release",
       "frontend | config",
-      "frontend | Page"
+      "frontend | Page",
+      "frontend | router"
     ]
   }
 }

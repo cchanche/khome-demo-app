@@ -3,7 +3,7 @@ import Header from './Header';
 
 const Page = ({ children }: React.PropsWithChildren) => {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen bg-indigo-900">
       <div className="flex flex-1 flex-col overflow-hidden align-middle">
         <Header />
 
