@@ -18,6 +18,10 @@
     "conventionalCommits.showEditor": false,
     "git.branchProtection": ["main"],
     "git.branchProtectionPrompt": "alwaysPrompt",
-    "conventionalCommits.scopes": ["root | initial setup", "api | database"]
+    "conventionalCommits.scopes": [
+      "root | initial setup",
+      "api | database",
+      "api | openapi"
+    ]
   }
 }
