@@ -8,7 +8,7 @@ async function bootstrap() {
   const config = new DocumentBuilder()
     .setTitle('Khome')
     .setDescription('The Khome Demo App API description')
-    .setVersion('1.0')
+    .setVersion(process.env.npm_package_version || '1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document);
