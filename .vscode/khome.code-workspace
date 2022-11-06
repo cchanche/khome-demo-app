@@ -22,6 +22,7 @@
     "conventionalCommits.showEditor": false,
     "git.branchProtection": ["main"],
     "git.branchProtectionPrompt": "alwaysPrompt",
+    "css.lint.unknownAtRules": "ignore",
     "conventionalCommits.scopes": [
       "root | initial setup",
       "api | database",
