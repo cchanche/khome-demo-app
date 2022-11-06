@@ -33,7 +33,8 @@
       "root | release",
       "frontend | config",
       "frontend | Page",
-      "frontend | router"
+      "frontend | router",
+      "frontend | users"
     ]
   }
 }
