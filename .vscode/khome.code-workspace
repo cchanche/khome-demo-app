@@ -32,9 +32,9 @@
       "root | documentation",
       "root | release",
       "frontend | config",
-      "frontend | Page",
-      "frontend | router",
-      "frontend | users"
-    ]
+      "frontend | Page",
+      "frontend | router",
+      "frontend | users"
+    ],
   }
 }
