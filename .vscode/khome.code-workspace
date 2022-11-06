@@ -36,7 +36,8 @@
       "frontend | router",
       "frontend | users",
       "frontend | http client",
-      "api | user"
+      "api | user",
+      "frontend | UI components"
     ],
   }
 }
