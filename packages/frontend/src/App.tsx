@@ -1,7 +1,12 @@
 import React from 'react';
+import Page from './components/Page';
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="bg-indigo-900">
+      <Page>Hello</Page>;
+    </div>
+  );
 }
 
 export default App;
