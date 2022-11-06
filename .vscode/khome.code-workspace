@@ -21,7 +21,8 @@
     "conventionalCommits.scopes": [
       "root | initial setup",
       "api | database",
-      "api | openapi"
+      "api | openapi",
+      "api | config"
     ]
   }
 }
