@@ -22,7 +22,8 @@
       "root | initial setup",
       "api | database",
       "api | openapi",
-      "api | config"
+      "api | config",
+      "api | documentation"
     ]
   }
 }
