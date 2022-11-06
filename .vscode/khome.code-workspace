@@ -28,7 +28,8 @@
       "api | openapi",
       "api | config",
       "api | documentation",
-      "root | documentation"
+      "root | documentation",
+      "root | release"
     ]
   }
 }
