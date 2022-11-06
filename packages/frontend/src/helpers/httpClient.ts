@@ -11,14 +11,18 @@ class HttpClient {
   ): Promise<{ response: Response; data: T }> => {
     const response = await fetch(`${this.baseUrl}${url}`, {
       method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        ...options?.headers,
+      },
       ...options,
     });
     if (!response.ok) {
       throw new Error(response.statusText);
     }
-    const parsedResponse = (await response.json()) as { data: T };
+    const data = (await response.json()) as T;
 
-    return { response, data: parsedResponse.data };
+    return { response, data };
   };
 
   post = async <T>(
@@ -27,14 +31,18 @@ class HttpClient {
   ): Promise<{ response: Response; data: T }> => {
     const response = await fetch(`${this.baseUrl}${url}`, {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        ...options?.headers,
+      },
       ...options,
     });
     if (!response.ok) {
       throw new Error(response.statusText);
     }
-    const parsedResponse = (await response.json()) as { data: T };
+    const data = (await response.json()) as T;
 
-    return { response, data: parsedResponse.data };
+    return { response, data };
   };
 
   put = async <T>(
@@ -43,14 +51,18 @@ class HttpClient {
   ): Promise<{ response: Response; data: T }> => {
     const response = await fetch(`${this.baseUrl}${url}`, {
       method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        ...options?.headers,
+      },
       ...options,
     });
     if (!response.ok) {
       throw new Error(response.statusText);
     }
-    const parsedResponse = (await response.json()) as { data: T };
+    const data = (await response.json()) as T;
 
-    return { response, data: parsedResponse.data };
+    return { response, data };
   };
 
   delete = async <T>(
@@ -59,14 +71,18 @@ class HttpClient {
   ): Promise<{ response: Response; data: T }> => {
     const response = await fetch(`${this.baseUrl}${url}`, {
       method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        ...options?.headers,
+      },
       ...options,
     });
     if (!response.ok) {
       throw new Error(response.statusText);
     }
-    const parsedResponse = (await response.json()) as { data: T };
+    const data = (await response.json()) as T;
 
-    return { response, data: parsedResponse.data };
+    return { response, data };
   };
 }
 
