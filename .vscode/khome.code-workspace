@@ -23,7 +23,8 @@
       "api | database",
       "api | openapi",
       "api | config",
-      "api | documentation"
+      "api | documentation",
+      "root | documentation"
     ]
   }
 }
