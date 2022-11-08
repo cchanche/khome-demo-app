@@ -9,7 +9,7 @@ It features :
 - A NestJS API with
   - A user entity
   - 4 REST routes on the user entity (GET, POST, PUT, DELETE)
-  - A MongoDB database, connected to our API with TypeORM
+  - A MongoDB database, connected to our API with Mongoose
   - Swagger endpoint documentation
 - A React frontend
   - created with Create React App
