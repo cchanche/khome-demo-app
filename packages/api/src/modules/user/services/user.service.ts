@@ -19,6 +19,9 @@ export class UserService {
   }
 
   async update({ id, ...updateUserDto }: UpdateUserDto) {
-    return this.userModel.updateOne({ _id: id }, updateUserDto).exec();
+    console.log(id);
+    return this.userModel
+      .updateOne({ _id: id }, { $set: updateUserDto })
+      .exec();
   }
 }

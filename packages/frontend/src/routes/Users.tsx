@@ -36,7 +36,7 @@ const Users = () => {
     async (userForm: FormFields, userId?: string) => {
       if (userId) {
         httpClient.put<void>('/users', {
-          body: JSON.stringify({ _id: userId, ...userForm }),
+          body: JSON.stringify({ id: userId, ...userForm }),
         });
       } else {
         httpClient.post<User>('/users', { body: JSON.stringify(userForm) });
