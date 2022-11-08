@@ -22,6 +22,7 @@
     "conventionalCommits.showEditor": false,
     "git.branchProtection": ["main"],
     "git.branchProtectionPrompt": "alwaysPrompt",
+    "css.lint.unknownAtRules": "ignore",
     "conventionalCommits.scopes": [
       "root | initial setup",
       "api | database",
@@ -29,7 +30,14 @@
       "api | config",
       "api | documentation",
       "root | documentation",
-      "root | release"
-    ]
+      "root | release",
+      "frontend | config",
+      "frontend | Page",
+      "frontend | router",
+      "frontend | users",
+      "frontend | http client",
+      "api | user",
+      "frontend | UI components"
+    ],
   }
 }
