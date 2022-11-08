@@ -58,16 +58,10 @@ $ yarn test:e2e
 $ yarn test:cov
 ```
 
-## Support
+## Architecture
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+This API is made of 2 modules : the _App Module_ and the _User Module_;
 
-## Stay in touch
+The _App Module_ is a dependency for the _User Module_.
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+The user module is reponsible for users registered on the platform.

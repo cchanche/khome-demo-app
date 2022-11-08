@@ -35,7 +35,7 @@ For this demo app, I chose to use `yarn` instead. `yarn` is faster, and has more
 
 > :warning: If this is your the first time checking out this repository, you might need to specify some environement variables. (see [Environement variables & files](#environement-variables--files)).
 
-## Technical considerations
+## :point_up: Technical considerations
 
 ## Environement variables & files
 
@@ -48,6 +48,8 @@ The api will consume it's keys & values using the `ConfigModule` from the `@nest
 The Database is initialized and configured using _Docker Compose_ and it's dedicated `docker-compose.yml` file. _Docker Compose_ will automatically parse the content of the `.env` file located where-ever it is beeing called. For local setup, include the environement file in the root directory.
 
 > The required content of the root `.env` is described within the `docker-compose.yml`. The `$ docker-compose up` command will fail if any variable is missing.
+
+By default, NestJS enables CORS protection for it's API. To make CORS work, you need to allow your different origins at bootstrap in the `main.ts` file. We have a single origin (our frontend), and its URL will be defined in an aditional _env-variable_.
 
 ## Docker & Docker-compose
 
@@ -63,20 +65,12 @@ Our API implements the _OpenAPI_ specification for it's documentation using [_Sw
 
 ### Dev tools
 
-TODO
-
-### Monorepo pattern
-
-TODO
-
-### TypoeORM vs Mongoose
-
-TODO
-
-### React framework
-
-TODO
+The recommended code editor for this project is VSCode. In the `.vscode` folder, you will find recommended extensions and settings for the workspace.
 
 ### Linting & Formatting tools
 
-TODO
+To format the code, I choose to go with the standard yet popular _Prettier_ library. Individual package configs can be found in their root `.prettierrc` file.
+
+To lint the code, I choose to go with _ESLint_. It is very popular, and integrates well with our formatter _Prettier_. Individual package configs can be found in their root `.eslintrc.js` file.
+
+In a entreprise-grade monorepo, these config-files would be shared between all packages directly from the repo's root directory. However, this would require I also share dependencies, since _ESLint_ and _Prettier_ both come as javascript libraries. Sharing dependencies requires to install and setup a monorepo-tool like _pnpm_, _Nx_, _Lerna_ or even _Yarn Workspaces_.
